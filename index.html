@@ -41,20 +41,56 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "포모도로 집중 타이머 | 광고·구독 없는 100% 로컬 백색소음 & 세션 트래커 (Focus Grove)",
-  "url": "https://focus-grove.enjoy-onepage.com/",
-  "description": "Forest의 대안! 이중 과금과 나무 고사 스트레스 없는 데스크톱·모바일 로컬 포모도로 타이머. 빗소리 백색소음, 탭 이탈 감지, 세션 통계 무료.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "All",
-  "browserRequirements": "Requires JavaScript. Requires HTML5.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "KRW"
-  }
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://focus-grove.enjoy-onepage.com/#webapp",
+      "name": "Focus Grove",
+      "url": "https://focus-grove.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "Forest의 대안! 이중 과금과 나무 고사 스트레스 없는 데스크톱·모바일 로컬 포모도로 타이머. 빗소리 백색소음, 탭 이탈 감지, 세션 통계 무료.",
+      "image": "https://focus-grove.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://focus-grove.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "25분이 너무 짧거나 긴 사람은 시간을 바꿀 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "환경설정에서 자신의 집중 사이클에 맞춰 50분 집중 / 10분 휴식 등 맞춤형 시간으로 자유롭게 커스텀할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "타이머가 끝났을 때 소리나 진동 알림이 오나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "브라우저 오디오 비프음 및 시각적 플래시 알림을 제공하여 이어폰 착용 중에도 즉각적으로 휴식 시간을 인지할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "뽀모도로 세트 기록은 어디에 저장되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "방문자의 브라우저 로컬 저장소에 오늘 달성한 뽀모도로 개수가 누적 기록되어 자기 통제감과 성취감을 시각화합니다."
+          }
+        }
+      ]
+    }
+  ]
 }
-</script>
+  </script>
 <meta content="https://focus-grove.enjoy-onepage.com/og-image.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Focus Grove - 광고 없는 무료 포모도로 타이머" name="twitter:title"/><meta content="서버 전송 0바이트! 브라우저 로컬에서 안전하고 몰입감 있게 집중 시간을 기록하고 빗소리를 들어보세요." name="twitter:description"/><meta content="https://focus-grove.enjoy-onepage.com/og-image.png" name="twitter:image"/></head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col font-sans">
 <!-- 상단 슬림 띠배너 (Top Slim Banner: 3824727725, 50~60px 고정) -->
