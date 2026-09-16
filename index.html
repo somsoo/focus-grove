@@ -2,6 +2,11 @@
 
 <html lang="ko">
 <head>
+    <!-- Performance Optimization: Resource Preconnect -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <title>포모도로 집중 타이머 | 광고·구독 없는 100% 로컬 백색소음 &amp; 세션 트래커 (Focus Grove)</title>
@@ -19,7 +24,18 @@
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
 <style>
     .mode-tab-active { background-color: #d97706; color: #ffffff; font-weight: 700; }
-  </style>
+  
+        /* U3 Accessibility: Global Keyboard Focus Ring Standard */
+        :focus-visible {
+            outline: 2px solid #3b82f6 !important;
+            outline-offset: 2px !important;
+        }
+        input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
+            outline: 2px solid #2563eb !important;
+            outline-offset: 1px !important;
+        }
+    
+    </style>
 <style id="layout-shield">
   html, body {
     max-width: 100%;
@@ -155,7 +171,7 @@
 <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 text-center space-y-6 relative overflow-hidden">
 <!-- 작업 라벨 입력 -->
 <div>
-<input class="w-full text-center bg-transparent text-sm font-bold text-amber-400 border-b border-slate-800 pb-2 outline-none focus:border-amber-500 transition" id="taskLabelInput" placeholder="지금 어떤 작업에 집중하시나요?" type="text" value="딥워크 &amp; 코딩"/>
+<input class="w-full text-center bg-transparent text-sm font-bold text-amber-400 border-b border-slate-800 pb-2 outline-none focus:border-amber-500 transition" id="taskLabelInput" placeholder="지금 어떤 작업에 집중하시나요?" type="text" value="딥워크 &amp; 코딩" aria-label="지금 어떤 작업에 집중하시나요?" />
 </div>
 <!-- 타이머 시간 숫자 -->
 <div class="py-4">
@@ -374,7 +390,7 @@
 <p>✓ 최대 3대 기기(PC/태블릿/스마트폰) 영구 인증</p>
 </div>
 <div class="space-y-2">
-<input class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-400 outline-none text-white" id="focusLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" type="text"/>
+<input class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-400 outline-none text-white" id="focusLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" type="text" aria-label="라이선스 키 입력 (예: PRO-XXXX-XXXX)" />
 <button class="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold rounded-xl transition" id="btnVerifyFocusLicense" onclick="verifyFocusLicenseKey()" type="button">
           라이선스 키 인증하기
         </button>
