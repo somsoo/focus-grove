@@ -108,6 +108,15 @@
 }
   </script>
 <meta content="https://focus-grove.enjoy-onepage.com/og-image.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Focus Grove - 광고 없는 무료 포모도로 타이머" name="twitter:title"/><meta content="서버 전송 0바이트! 브라우저 로컬에서 안전하고 몰입감 있게 집중 시간을 기록하고 빗소리를 들어보세요." name="twitter:description"/><meta content="https://focus-grove.enjoy-onepage.com/og-image.png" name="twitter:image"/><style id="mobile-hardening-shield">
+  /* 모바일 한글 단어 단위 줄바꿈 보존 & 버튼 텍스트 단일행 쉴드 */
+  body, h1, h2, h3, h4, p, span, label {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  button, [role="button"], a.btn {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
   @media (max-width: 640px) {
     input, select, textarea {
       font-size: 16px !important;
