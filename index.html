@@ -8,7 +8,7 @@
 
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>포모도로 집중 타이머 | 광고 없는 백색소음 &amp; 세션 기록</title>
+<title>포모도로 집중 타이머 | 광고 없는 백색소음 &amp;</title>
 <meta content="무료 포모도로 타이머. 25분 집중과 5·15분 휴식을 번갈아 재고, 브라우저가 만드는 빗소리 백색소음과 집중 기록을 함께 씁니다." name="description"/>
 <link href="https://focus-grove.enjoy-onepage.com/" rel="canonical"/>
 <meta content="Focus Grove - 광고 없는 무료 포모도로 타이머" property="og:title"/>
@@ -127,6 +127,25 @@
 </style>
     <link rel="alternate" type="application/rss+xml" title="포모도로 집중 타이머 | 광고 없는 백색소음 &amp; 세션 기록" href="https://focus-grove.enjoy-onepage.com/rss.xml">
     <link rel="sitemap" type="application/xml" href="https://focus-grove.enjoy-onepage.com/sitemap.xml">
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
+</style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col font-sans">
 <!-- 상단 슬림 띠배너 (Top Slim Banner: 3824727725, 50~60px 고정) -->
@@ -410,7 +429,14 @@
     
 
   
-    <!-- E-E-A-T FAQ Section (16-5 헌법 준수) -->
+    <!-- ADSENSE START: mid -->
+<div class="ad-box ad-mid" style="max-width:1080px;margin:16px auto;padding:0 14px;text-align:center;">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+<!-- E-E-A-T FAQ Section (16-5 헌법 준수) -->
     <section class="mt-8 mb-8 space-y-3">
       <h2 class="text-xl font-bold text-gray-900 mb-4">자주 묻는 질문 (FAQ)</h2>
       <details class="bg-gray-50 p-4 rounded-xl border border-gray-200 group">
@@ -437,7 +463,7 @@
   </main>
 <!-- 하단 대형 배너 (푸터 직전: 3416334507, 1:1 푸시 규격) -->
 <div class="manual-ad-box ad-bottom-banner w-full max-w-5xl mx-auto mb-8 text-center overflow-hidden">
-<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
+<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block;min-height:280px;"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
