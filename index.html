@@ -8,7 +8,7 @@
 
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>포모도로 집중 타이머 | 광고 없는 백색소음 &amp;</title>
+<title>포모도로 집중 타이머 | 백색소음 뽀모도로 시계</title>
 <meta content="무료 포모도로 타이머. 25분 집중과 5·15분 휴식을 번갈아 재고, 브라우저가 만드는 빗소리 백색소음과 집중 기록을 함께 씁니다." name="description"/>
 <link href="https://focus-grove.enjoy-onepage.com/" rel="canonical"/>
 <meta content="Focus Grove - 광고 없는 무료 포모도로 타이머" property="og:title"/>
@@ -490,7 +490,7 @@
         resetTimer();
       }
       timerMode = mode;
-      totalSeconds = mins * 60;
+      totalSeconds = Math.max(1, (parseInt(mins, 10) || 25)) * 60;
       remainingSeconds = totalSeconds;
 
       ['focus', 'shortBreak', 'longBreak'].forEach(m => {
@@ -553,8 +553,9 @@
     }
 
     function updateTimerDisplay() {
-      const m = Math.floor(remainingSeconds / 60);
-      const s = remainingSeconds % 60;
+      const safeSec = Math.max(0, remainingSeconds);
+      const m = Math.floor(safeSec / 60);
+      const s = safeSec % 60;
       const str = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
       document.getElementById('timerDisplay').textContent = str;
       document.title = `(${str}) Focus Grove`;
@@ -601,7 +602,7 @@
     function loadSessions() {
       const val = localStorage.getItem('focus_grove_completed');
       if (val) {
-        completedSessions = parseInt(val, 10) || 0;
+        completedSessions = Math.max(0, parseInt(val, 10) || 0);
       }
     }
 
